@@ -1,0 +1,19 @@
+{
+    "docs": [
+        {
+            "_id": "safe1",
+            "type": "safe",
+            "payload": "set to something."
+        },
+        {
+            "_id": "safe2",
+            "type": "safe",
+            "payload": "set to something else."
+        },
+        {
+            "_id": "safe3",
+            "type": "safe",
+            "payload": "set to something."
+        }
+    ]
+}

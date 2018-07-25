@@ -1,0 +1,18 @@
+{
+  "docs": [
+    {
+      "_id": "_design/relationships",
+      "views": {
+        "bySafe": {
+          "map": "function (doc) {\n    if (doc.type === \"association\") {\n        if (doc.safe) {\n            emit([doc.safe, 0], { \"_id\": doc.safe });\n            if (doc.user) {\n                emit([doc.safe, 1], { \"_id\": doc.user });\n            }\n            if (doc.token) {\n                emit([doc.safe, 2], { \"_id\": doc.token });\n            }\n        }\n    }\n}\n"
+        },
+        "byToken": {
+          "map": "function (doc) {\n    if (doc.type === \"association\") {\n        if (doc.token) {\n            emit([doc.token, 0], { \"_id\": doc.token });\n            if (doc.user) {\n                emit([doc.token, 1], { \"_id\": doc.user });\n            }\n            if (doc.safe) {\n                emit([doc.token, 2], { \"_id\": doc.safe });\n            }\n        }\n    }\n}\n"
+        },
+        "byUser": {
+          "map": "function (doc) {\n    if (doc.type === \"association\") {\n        if (doc.user) {\n            emit([doc.user, 0], { \"_id\": doc.user });\n            if (doc.safe) {\n                emit([doc.user, 1], { \"_id\": doc.safe });\n            }\n            if (doc.token) {\n                emit([doc.user, 2], { \"_id\": doc.token });\n            }\n        }\n    }\n}\n"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "docs": [
+        {
+            "_id": "association1",
+            "type": "association",
+            "safe": "safe1",
+            "user": "user1"
+        },
+        {
+            "_id": "association2",
+            "type": "association",
+            "safe": "safe2",
+            "user": "user2",
+            "token": "token2"
+        },
+        {
+            "_id": "association3",
+            "type": "association",
+            "safe": "safe3",
+            "token": "token3"
+        }
+    ]
+}

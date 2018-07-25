@@ -1,0 +1,16 @@
+{
+    "docs": [
+        {
+            "_id": "user1",
+            "type": "user",
+            "username": "user1",
+            "email": "user1@raisingthefloor.org"
+        },
+        {
+            "_id": "user2",
+            "type": "user",
+            "username": "user2",
+            "email": "user2@raisingthefloor.org"
+        }
+    ]
+}

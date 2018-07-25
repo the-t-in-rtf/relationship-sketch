@@ -1,0 +1,19 @@
+{
+    "name": "relationship-sketch",
+    "version": "1.0.0",
+    "description": "A ske",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Tony Atkins <tony@raisingthefloor.org>",
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "gpii-express": "1.0.14",
+        "gpii-pouchdb": "1.0.12",
+        "infusion": "3.0.0-dev.20180720T113347Z.272cf70"
+    },
+    "devDependencies": {
+        "rimraf": "2.6.2"
+    }
+}
